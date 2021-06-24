@@ -4,7 +4,7 @@ body{
 
 header{
     width: 100%;
-    position: sticky;
+    position: sticky; /*Permite que o elemento fique em posição relativa quando não necessita do scroll, e uma posição fixa quando é acionado o scroll.*/
     top:0;
     background-color: bisque;
     
@@ -35,7 +35,8 @@ header div.menu a:hover{
 
 main.container{
     background-color: violet;
-    max-width: 1280px;
+    width: 100%;    /*para a ter a largura da tela independete do tamanho*/
+    /*max-width: 1280px;*/  /*Em tela maior fica um espaço em branco do lado direito*/
     text-align: center;
     
 }
@@ -65,9 +66,10 @@ section div.img{
 
 section p{
     text-align: left;
+    text-indent: 5px;   /*da destaque para primeira linha, proporcionando um respiro no começo do parágrafo.*/
 }
 footer{
     text-align: center;
-    padding: 25px 0;
+    padding: 25px 0; /*padding abrange só o conteúdo, assim toda cor do background fica do tamanho dele.*/
     background-color: bisque;
 }
